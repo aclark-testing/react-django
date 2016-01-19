@@ -14,7 +14,6 @@ clean:
 flake:
 	-flake8 $(project)/*.py
 	-flake8 $(project)/$(app)/*.py
-	-flake8 $(project)/$(app)/migrations/*.py
 install:
 	virtualenv .
 	bin/pip install -r requirements.txt
@@ -44,4 +43,3 @@ wc:
 yapf:
 	-yapf -i $(project)/*.py
 	-yapf -i $(project)/$(app)/*.py
-	-yapf -i $(project)/$(app)/migrations/*.py
