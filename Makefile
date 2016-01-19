@@ -41,5 +41,5 @@ wc:
 	wc -l $(project)/*.py
 	wc -l $(project)/$(app)/*.py
 yapf:
-	-yapf -i $(project)/*.py
+	-yapf -i -e urls.py $(project)/*.py
 	-yapf -i $(project)/$(app)/*.py
