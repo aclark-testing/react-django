@@ -1,6 +1,7 @@
+from .serializers import CommentSerializer
+from .models import Comment
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import CommentSerializer
 
 # Create your views here.
 
