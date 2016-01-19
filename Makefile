@@ -2,8 +2,8 @@ all: lint update push
 db: clean migrate su
 lint: yapf flake wc
 
-project = project
-app = app
+project = react
+app = tutorial
 
 clean:
 	-rm -f db.sqlite3
