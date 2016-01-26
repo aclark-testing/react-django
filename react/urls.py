@@ -25,5 +25,5 @@ router.register(r'comments', views.CommentViewSet)
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', 'react.tutorial.views.home', name='home'),
-    url(r'^api/comments', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^', include(router.urls)),
 ]

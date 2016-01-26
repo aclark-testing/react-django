@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'react.tutorial',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -121,3 +122,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser', ),
+    'PAGE_SIZE': 10
+}
