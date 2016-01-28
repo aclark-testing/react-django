@@ -6,5 +6,5 @@ from django.db import models
 
 
 class Comment(models.Model):
-    comment = models.CharField(max_length=300, blank=True, null=True)
-    name = models.CharField(max_length=300, blank=True, null=True)
+    text = models.CharField(max_length=300, blank=True, null=True)
+    author = models.CharField(max_length=300, blank=True, null=True)
