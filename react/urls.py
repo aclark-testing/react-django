@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', 'react.tutorial.views.home', name='home'),
     url(r'^', include(router.urls)),
+    url(r'^docs/', include('rest_framework_swagger.urls')),
 ]
