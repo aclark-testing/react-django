@@ -141,6 +141,6 @@ var CommentForm = React.createClass({
 });
 
 ReactDOM.render(
-  <CommentBox url="/comments?format=json" pollInterval={2000} />,
+  <CommentBox url="/comments/?format=json" pollInterval={2000} />,
   document.getElementById('content')
 );
