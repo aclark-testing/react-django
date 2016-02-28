@@ -9,7 +9,3 @@ x.onreadystatechange = function(){
 
 x.setRequestHeader('Content-Type', 'application/json');
 x.send()
-
-/*
-Exception: [Exception... "<no message>"  nsresult: "0x805e0006 (<unknown>)"  location: "JS frame :: Scratchpad/4 :: <TOP_LEVEL> :: line 11"  data: no]
-*/
