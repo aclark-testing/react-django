@@ -8,3 +8,6 @@ Django React Tutorial
 
 Test CORS
 ---------
+
+.. image:: screenshot2.png
+    :width: 100%
